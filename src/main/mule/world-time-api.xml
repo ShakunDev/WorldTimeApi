@@ -12,7 +12,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener doc:name="Listener" doc:id="9f0a182f-f6d5-4e7f-beca-68291b7029e3" config-ref="HTTP_Listener_config" path="/test"/>
 		<ee:transform doc:name="Transform Message" doc:id="f306f098-1007-40cc-837f-b829d13f5f79" >
 			<ee:message >
-				<ee:set-payload ><![CDATA[payload]]></ee:set-payload>
+				<ee:set-payload ><![CDATA[{
+	"StatusOfPAYLOAD":"Change"
+}]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="b3fb4568-1f40-4781-aa7b-25094eb8f6eb" message="#[payload]"/>
