@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<ee:transform doc:name="Transform Message" doc:id="f306f098-1007-40cc-837f-b829d13f5f79" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[{
-	"StatusOfPAYLOAD":"Change"
+	"StatusOfPAYLOAD":"MyPayload"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
